@@ -332,7 +332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 25203198}
   m_Layer: 0
-  m_Name: Start
+  m_Name: startPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4610,7 +4610,7 @@ GameObject:
   - component: {fileID: 813985536}
   - component: {fileID: 813985535}
   m_Layer: 5
-  m_Name: Restart UI
+  m_Name: restartUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4718,11 +4718,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 815884681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 167ff67f7a8054e3f895549f6611b2b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fbe0f3dad1974282bc5a2a2cca04def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1553851993}
   startUI: {fileID: 999025465}
   restartUI: {fileID: 813985534}
+  startPoint: {fileID: 25203197}
+  playPoint: {fileID: 976885302}
+  restartPoint: {fileID: 830440671}
 --- !u!4 &815884683
 Transform:
   m_ObjectHideFlags: 0
@@ -4745,7 +4749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 830440672}
   m_Layer: 0
-  m_Name: END
+  m_Name: restartPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5880,7 +5884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 976885303}
   m_Layer: 0
-  m_Name: Play
+  m_Name: playPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5893,7 +5897,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 976885302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.086, y: 4.098, z: -6.714}
+  m_LocalPosition: {x: -3.086, y: 3.83, z: -6.714}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6133,7 +6137,7 @@ GameObject:
   - component: {fileID: 999025467}
   - component: {fileID: 999025466}
   m_Layer: 5
-  m_Name: Start UI
+  m_Name: startUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6215,7 +6219,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.03, y: 4.18}
+  m_AnchoredPosition: {x: -2.03, y: 4.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1013298152
@@ -9480,7 +9484,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.58823526, g: 0.6055363, b: 0.6055363, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -9501,7 +9505,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 815884682}
-        m_MethodName: ToggleUI
+        m_MethodName: ResetPuzzle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12338,8 +12342,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0, b: 1, a: 1}
+    m_NormalColor: {r: 0.64705884, g: 0.6565744, b: 0.6565744, a: 1}
+    m_HighlightedColor: {r: 0.94482756, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -12359,7 +12363,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 815884682}
-        m_MethodName: ToggleUI
+        m_MethodName: StartPuzzle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
