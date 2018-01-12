@@ -10,7 +10,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Udacity
+  companyName: FTVR
   productName: Puzzler
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -141,7 +141,7 @@ PlayerSettings:
   targetPixelDensity: 0
   resolutionScalingMode: 0
   applicationIdentifier:
-    Android: com.Udacity.Puzzler
+    Android: com.FritzTemplin.Puzzler
     Standalone: com.Udacity.Puzzler
     Tizen: com.Company.ProductName
     iOS: com.Udacity.Puzzler
