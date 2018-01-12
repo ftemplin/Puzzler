@@ -75,6 +75,6 @@ public class LightUp : MonoBehaviour
 		this.GetComponent<MeshRenderer>().material = lightUpMaterial;
 
 		// Get the GVR audio source component on this orb and play the audio.
-		this.GetComponent<GvrAudioSource>().Play(); 
+		// this.GetComponent<GvrAudioSource>().Play(); 
 	}
 }
