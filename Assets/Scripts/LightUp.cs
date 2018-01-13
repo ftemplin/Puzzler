@@ -27,9 +27,9 @@ public class LightUp : MonoBehaviour
 		// this script is attached to.
 		gameLogic.PlayerSelection(this.gameObject);
 
-		// Get the GVR audio source component on this orb and play the audio.
+		// Get the audio source component on this orb and play the audio.
 		/* Uncomment the line below during 'A Little More Feedback!' lesson.*/
-		// this.GetComponent<GvrAudioSource>().Play();
+		this.GetComponent<AudioSource>().Play();
 	}
 
 	// Called when the reticle moves over the orb.
@@ -74,7 +74,7 @@ public class LightUp : MonoBehaviour
 		// Assign the lightup material to the orb.
 		this.GetComponent<MeshRenderer>().material = lightUpMaterial;
 
-		// Get the GVR audio source component on this orb and play the audio.
-		// this.GetComponent<GvrAudioSource>().Play(); 
+		// Get the audio source component on this orb and play the audio.
+	    this.GetComponent<AudioSource>().Play(); 
 	}
 }
