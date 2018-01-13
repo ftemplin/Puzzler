@@ -89,7 +89,6 @@ public class GameLogic : MonoBehaviour
     {
         // Enable the start UI.
         startUI.SetActive(true);
-
         // Disable the restart UI.
         restartUI.SetActive(false);
 
